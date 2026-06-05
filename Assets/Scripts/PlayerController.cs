@@ -33,12 +33,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Ground check based on raycast
-        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
         // Draw the raycast to visualize it in the editor
         Debug.DrawLine(transform.position, transform.position + (Vector3.down * groundCheckDistance), Color.red);
 
         // Get the horizontal and vertical input from the player as a Vector2
-        Vector2 input = InputSystem.actions["Move"].ReadValue<Vector2>();
+        Vector2 input = InputSystem.actions["Player/Move"].ReadValue<Vector2>();
 
         // Create a 3D vector for horizontal movement direction
         Vector3 moveDir = new Vector3(input.x, 0, input.y);
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Jump Logic
-        if (InputSystem.actions["Jump"].WasPressedThisFrame() && isGrounded && Time.time > lastJumpTime + jumpRepeatTime)
+        if (InputSystem.actions["Player/Jump"].WasPressedThisFrame() && isGrounded && Time.time > lastJumpTime + jumpRepeatTime)
         {
             // Calculate the jump force using the fomula v = sqrt(-2gh)
             verticalVelocity = Mathf.Sqrt(jumpHeight * -2 * gravity);
