@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 2c18e36390893524eb6de21cdf66d1e3, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 639b6ce73b347e5429ac0526c9c29094, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -777,7 +781,7 @@ CharacterController:
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.002
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &1956443245
@@ -873,6 +877,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4438248507336014, guid: 1e4f0d9e7dbf221419b0bd0e1286aa16, type: 3}
       propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64117466800886904, guid: 1e4f0d9e7dbf221419b0bd0e1286aa16, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
