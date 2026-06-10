@@ -9,9 +9,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckDistance = 0.001f;
     // Time between allowed jumps
     [SerializeField] private float jumpRepeatTime = 1f;
+    
+        // ✅ NEU: public damit PowerUp_Speed darauf zugreifen kann
+    [HideInInspector] public float movementSpeed = 5f;
 
-    // Movement parameters
-    [SerializeField] private float movementSpeed = 5f;
     [SerializeField] private float jumpHeight = 2f;
     [SerializeField] private float gravity = -9.81f;
 
