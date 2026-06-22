@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckDistance = 0.05f;
     // Time between allowed jumps
     [SerializeField] private float jumpRepeatTime = 0.2f;
-    [SerializeField] private float jumpRepeatTime = 1f;
     
         // ✅ NEU: public damit PowerUp_Speed darauf zugreifen kann
     [HideInInspector] public float movementSpeed = 5f;
@@ -48,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(Hitpoints);
         // Ground check based on raycast
         isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
         //Debug.Log(isGrounded);
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isRunning", isMoving);
 
         float sprintput = InputSystem.actions["Player/Sprint"].ReadValue<float>();
-        Debug.Log(sprintput);
+        //Debug.Log(sprintput);
         float targetRotation = 0;
         float speed = 0;
 
@@ -142,17 +142,24 @@ public class PlayerController : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        
         if(hit.gameObject.tag == "dead")
         {
             Hitpoints = 0;
         }
         if (hit.gameObject.tag == "hp")
         {
+            Debug.Log(hit);
             Hitpoints++;
+           // hit.GetComponent<PowerUp_Health>().die(); 
+            Destroy(hit.gameObject);
+            
         }
         if(hit.gameObject.tag == "boost")
         {
+            Debug.Log(hit);
             speedboost = true;
+            Destroy(hit.gameObject);
         }
     }
 }
