@@ -1,0 +1,12 @@
+1.Flying ability 
+	⁃	looks stupid cuz the downloaded boss has already attached wings which couldn’t be added any animator (so I came up with that shitty alternative :)))
+
+2.Fire shooting ability 
+	⁃	Fireballs track the character’s position and stop when reach the ground or the character ( NEED TO LINK THE PLAYER IN THE INSPECTOR)
+	⁃	slow at first and faster, the lower his health bar ist 
+	⁃	Stop shooting when the health bar drops to 0
+ 
+3.Source 
+	⁃	Boss: https://sketchfab.com/3d-models/another-alien-18e8a671ba15466390108c01e190a989
+	⁃	Fireball material: https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-asset-vfx-particles-fireball-pack-263814
+
