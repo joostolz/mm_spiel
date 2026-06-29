@@ -2,8 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
+<<<<<<< HEAD
   serializedVersion: 2
   tags: []
+=======
+  serializedVersion: 3
+  tags:
+  - dead
+  - boost
+  - hp
+>>>>>>> 55b5fc675683db4a762f02832c6780faf66d0a89
   layers:
   - Default
   - TransparentFX
@@ -12,7 +20,11 @@ TagManager:
   - Water
   - UI
   - 
+<<<<<<< HEAD
   - 
+=======
+  - Wall
+>>>>>>> 55b5fc675683db4a762f02832c6780faf66d0a89
   - 
   - 
   - 
@@ -43,6 +55,7 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+<<<<<<< HEAD
   - Light Layer 1
   - Light Layer 2
   - Light Layer 3
@@ -74,3 +87,5 @@ TagManager:
   - 
   - 
   - 
+=======
+>>>>>>> 55b5fc675683db4a762f02832c6780faf66d0a89

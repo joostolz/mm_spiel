@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+    "version": 1,
+>>>>>>> 55b5fc675683db4a762f02832c6780faf66d0a89
     "name": "InputSystem_Actions",
     "maps": [
         {
