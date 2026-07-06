@@ -4,9 +4,6 @@
 MultiplayerManager:
   m_ObjectHideFlags: 0
   m_EnableMultiplayerRoles: 0
-<<<<<<< HEAD
-=======
   m_EnablePlayModeLocalDeployment: 0
   m_EnablePlayModeRemoteDeployment: 0
->>>>>>> 55b5fc675683db4a762f02832c6780faf66d0a89
   m_StrippingTypes: {}
