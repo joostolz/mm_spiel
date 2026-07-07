@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 639b6ce73b347e5429ac0526c9c29094, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.519
+      value: -11.2932005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 639b6ce73b347e5429ac0526c9c29094, type: 3}
       propertyPath: m_LocalPosition.y
@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 639b6ce73b347e5429ac0526c9c29094, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.065
+      value: -17.06502
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 639b6ce73b347e5429ac0526c9c29094, type: 3}
       propertyPath: m_LocalRotation.w
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 446039029}
   - component: {fileID: 446039031}
   m_Layer: 0
-  m_Name: Ziel
+  m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2213,7 +2213,7 @@ Transform:
   m_GameObject: {fileID: 1186741609}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.44026956, z: 0, w: 0.89786565}
-  m_LocalPosition: {x: -13.681423, y: 1.8899982, z: -20.514303}
+  m_LocalPosition: {x: -14.455624, y: 1.8899982, z: -19.514322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3256,7 +3256,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956443240}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 915f6252cf4d942bcbbc991fd9eeccef, type: 3}
   m_Name: 
@@ -3681,7 +3681,7 @@ Transform:
   m_GameObject: {fileID: 2116534592}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.44026956, z: 0, w: 0.89786565}
-  m_LocalPosition: {x: -13.681423, y: 1.8899982, z: -20.514303}
+  m_LocalPosition: {x: -14.455624, y: 1.8899982, z: -19.514322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

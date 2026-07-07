@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
     // Time between allowed jumps
     [SerializeField] private float jumpRepeatTime = 0.2f;
     
-        // ✅ NEU: public damit PowerUp_Speed darauf zugreifen kann
     [HideInInspector] public float movementSpeed = 5f;
 
     [SerializeField] private float jumpHeight = 2f;
